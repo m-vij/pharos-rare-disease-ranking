@@ -1,0 +1,4 @@
+53c094d98f8a5030fbb75a9b234fba6639412ebd086c7c9541cf35de9045d572  src/real_eval.py
+42153c7cb830ab12192be7dfc7cc508db536c6b778234ca5b7668372cfe04aa5  src/real_llm.py
+5155ac90dffff674448a74e3faae2133a6471cf2654c7c8a5bb0c3de3b7caa33  tests/test_real.py
+c3ddd792fa9c1971fd7c640d74ee1a45c8866ed5a45e177ebb8aca787fb70143  slurm/real_llm.sh

@@ -1,0 +1,18 @@
+
+cache/llm_heldout_rag_ordev.jsonl
+  source phenomizer: 25 diseases, 75 patients   shortlist held the true disease for 74 patients
+    model                                         R@1 0.907 [0.800, 0.987]   R@10 0.987 [0.960, 1.000]   MRR 0.940 [0.873, 0.993]
+    scorer's own order, same shortlist            R@1 0.907 [0.800, 0.987]   R@10 0.987 [0.960, 1.000]   MRR 0.934 [0.852, 0.993]
+    model minus scorer, all patients              R@1 0.000 [-0.080, 0.093]   R@10 0.000 [0.000, 0.000]   MRR 0.006 [-0.045, 0.070]
+    model minus scorer, shortlist held the diseaseR@1 0.013 [-0.080, 0.133]   R@10 0.000 [0.000, 0.000]   MRR 0.017 [-0.044, 0.102]
+  source phenopackets: 180 diseases, 540 patients   shortlist held the true disease for 484 patients
+    model                                         R@1 0.652 [0.593, 0.707]   R@10 0.859 [0.813, 0.904]   MRR 0.727 [0.678, 0.775]
+    scorer's own order, same shortlist            R@1 0.698 [0.641, 0.756]   R@10 0.865 [0.822, 0.907]   MRR 0.756 [0.706, 0.804]
+    model minus scorer, all patients              R@1 -0.046 [-0.087, -0.006]   R@10 -0.006 [-0.020, 0.007]   MRR -0.029 [-0.054, -0.005]
+    model minus scorer, shortlist held the diseaseR@1 -0.046 [-0.091, -0.002]   R@10 -0.015 [-0.038, 0.005]   MRR -0.031 [-0.058, -0.003]
+
+cache/llm_heldout_model_alone.jsonl
+  source phenomizer: 25 diseases, 75 patients   unmatched answer lines: 59%
+    model                                         R@1 0.187 [0.053, 0.333]   R@10 0.280 [0.133, 0.440]   MRR 0.223 [0.091, 0.370]
+  source phenopackets: 180 diseases, 540 patients   unmatched answer lines: 63%
+    model                                         R@1 0.022 [0.006, 0.043]   R@10 0.037 [0.015, 0.063]   MRR 0.027 [0.009, 0.049]

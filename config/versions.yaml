@@ -1,0 +1,44 @@
+hp_obo: data/hp.obo
+hpoa: data/phenotype.hpoa
+phenopacket_store: data/phenopacket-store
+phenopacket_store_version: "<the real version>"
+hp_obo_data_version: ""
+hpoa_header: |
+
+split:
+  by: disease
+  tuning_fraction: 0.2
+  seed: 20260415
+
+llm:
+  runtime: llama.cpp
+  llama_cpp_commit: b76b13379d3b7d67ab0bc424516bb6fd2522bd8e
+  llama_cpp_version: "0.7.0-dev (build 11670, commit b76b13379)"
+  build:
+    cxx_compiler: "GNU 15.2.0"
+    cuda_host_compiler: "gcc 11.2.0"
+    nvcc: "12.3.107"
+    cmake: "3.23.2"
+    cmake_flags: "-DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=90 -DCMAKE_BUILD_TYPE=Release"
+  runtime_modules: ["gcc/15.2.0", "cuda12.3/toolkit/12.3.2"]
+  hardware:
+    partition: gpu-h100
+    gpu: "NVIDIA H100 80GB HBM3"
+    driver: "550.54.15"
+  model:
+    repo: ggml-org/Qwen3.6-27B-GGUF
+    quant: Q8_0
+    file: /home/vijm/PHAROS/models/qwen3.6-27b/Qwen3.6-27B-Q8_0.gguf
+    sha256: 73f8260284708ed78ae266df672288b6ad1f2c73ec7ffeb7514b5cecdba646c9
+  decoding:
+    temperature: 0
+    seed: 1234
+    context: 8192
+    candidate_constraint: grammar   # GBNF restricted to the fixed candidate list
+    thinking: "off (llama-server --reasoning off --no-reasoning-preserve)"
+
+data_versions:
+  hp_obo: "hp/releases/2026-09-01"
+  phenotype_hpoa: "2026-09-02 (built on HPO release 2026-09-01)"
+  phenopacket_store: null   # still unknown; fill in from the zip name or release page
+  hpoa_composition: "8478 OMIM; 47 DECIPHER; 4357 ORPHANET diseases (OMIM only used)"

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.gguf
+hp.obo
+phenotype.hpoa
+
+figures/*.png
+figures/*.pdf

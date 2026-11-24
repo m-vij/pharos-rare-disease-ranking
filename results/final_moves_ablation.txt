@@ -1,0 +1,9 @@
+cache/llm_heldout_rag.jsonl
+  phenomizer: both right 45 | damage 23 | rescue 4 | both wrong 2 | sign test p = 0.000311
+  phenopackets: both right 105 | damage 272 | rescue 29 | both wrong 78 | sign test p = 1.16e-50
+cache/llm_heldout_rag_ev.jsonl
+  phenomizer: both right 52 | damage 16 | rescue 3 | both wrong 3 | sign test p = 0.00443
+  phenopackets: both right 210 | damage 167 | rescue 25 | both wrong 82 | sign test p = 5.69e-27
+cache/llm_heldout_rag_ord.jsonl
+  phenomizer: both right 55 | damage 13 | rescue 4 | both wrong 2 | sign test p = 0.049
+  phenopackets: both right 179 | damage 198 | rescue 30 | both wrong 77 | sign test p = 1.53e-31

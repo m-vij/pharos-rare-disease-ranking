@@ -1,0 +1,16 @@
+{
+ "files": 10377,
+ "cases": 10374,
+ "dropped": {
+  "not a phenopacket": 1,
+  "no findings": 2
+ },
+ "terms_remapped": 30,
+ "terms_dropped": {},
+ "diseases": 780,
+ "cohorts": 700,
+ "with_gene": 10305,
+ "with_exactly_one_pmid": 10374,
+ "diseases_with_1_case": 91,
+ "diseases_with_10_or_more": 251
+}

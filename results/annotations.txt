@@ -1,0 +1,8 @@
+version: 2026-09-02
+candidate diseases: 8465
+annotations per disease (median): 12
+rows: 286651
+rows_positive: 152141
+rows_not_aspect_P: 17745
+rows_other_prefix: 116765
+terms dropped while reading (by reason): {}

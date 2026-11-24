@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software or its outputs, please cite it as below."
+title: "Code, simulated patients and results for: How much does a language model add to ontology-based phenotype ranking of rare diseases?"
+authors:
+  - family-names: "Vij"
+    given-names: "Manan"
+date-released: 2026-11-24
+license: MIT

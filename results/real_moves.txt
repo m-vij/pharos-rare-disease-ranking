@@ -1,0 +1,3 @@
+cache/llm_real_rag_ordev.jsonl
+  real_none_removed: both right 37 | damage 13 | rescue 16 | both wrong 50 | sign test p = 0.711
+  real_partly_removed: both right 6 | damage 3 | rescue 13 | both wrong 26 | sign test p = 0.0213
